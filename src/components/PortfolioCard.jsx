@@ -3,7 +3,7 @@ import { Card } from '@material-tailwind/react';
 
 const Cards = (props) => {
     return (
-        <Card className="mt-6 mb-4 lg:w-48 shadow-lg hover:bg-brown-400 hover:text-white rounded-lg border-2">
+        <Card className="mt-6 mb-4 w-48 shadow-lg hover:bg-brown-400 hover:text-white rounded-lg border-2">
             <img src={props.imageURL} alt="card-img" className="rounded-lg w-full h-full" />
         </Card>
     );
