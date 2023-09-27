@@ -2,6 +2,7 @@ import React from 'react'
 import HomeCard from '../components/HomeCard'
 import PortfolioCard from '../components/PortfolioCard'
 import DemoVideo from '../assets/demo.mp4'
+import Contact from '../components/Contact'
 
 export default function Home() {
     return (
@@ -28,11 +29,14 @@ export default function Home() {
                 id='b4'
                 className='bg-brown-900 rounded-lg w-full'
             >
-                <video className="h-full w-full rounded-lg" controls autoPlay muted>
+                <video className="h-full w-full rounded-lg" loop autoPlay muted>
                     <source src={DemoVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                     you can add your works video
                 </video>
+            </section>
+            <section id='contact'>
+                <Contact />
             </section>
         </div>
     )
