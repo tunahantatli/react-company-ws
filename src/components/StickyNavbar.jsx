@@ -6,6 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import SocialDropmenu from "./SocialDropmenu";
+import { Link } from "react-router-dom";
  
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -25,9 +26,9 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-2 font-normal hover:bg-brown-900 hover:text-white rounded-md"
       >
-        <a href="#x" className="flex items-center">
+        <Link to="/" className="flex items-center">
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -35,9 +36,9 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-2 font-normal hover:bg-brown-900 hover:text-white rounded-md"
       >
-        <a href="#x" className="flex items-center">
+        <Link to="/about-us" className="flex items-center">
           About Us
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -45,9 +46,9 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-2 font-normal hover:bg-brown-900 hover:text-white rounded-md"
       >
-        <a href="#x" className="flex items-center">
+        <Link to="/services" className="flex items-center">
           Services
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -55,9 +56,9 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-2 font-normal hover:bg-brown-900 hover:text-white rounded-md"
       >
-        <a href="#x" className="flex items-center">
+        <Link to="/portfolio" className="flex items-center">
           Portfolio
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -76,7 +77,7 @@ export function StickyNavbar() {
         <div className="flex items-center justify-between text-blue-gray-900 text-[20px] h-8 mt-4">
           <Typography
             as="a"
-            href="#x"
+            to="/"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
             UR Brand

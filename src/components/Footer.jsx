@@ -57,7 +57,7 @@ export function Footer() {
               label="Email Address"
               value={email}
               onChange={onChange}
-              className="pr-20 border-white text-white"
+              className="pr-20 border-white text-black"
               containerProps={{
                 className: "min-w-0 text-white",
               }}
